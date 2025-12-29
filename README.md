@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="./docs/rios_logo.svg" alt="RIOS logo" width="300">
+  <img src="./docs/rios_logo.svg" alt="RIOS logo" width="400">
 </p>
 
 ---
