@@ -1,10 +1,6 @@
 
 <div align="center">
   <img src=">https://raw.githubusercontent.com/facundogalletta/RIOS/7fd135207770977cb251093c73fa708a63b03e92/docs/rios_logo.svg" width="350px">
-  <br />
-  <br />
-
-  <p>
 </div>
 
 ---
