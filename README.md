@@ -1,3 +1,14 @@
+
+<div align="center">
+  <img src=">https://github.com/facundogalletta/RIOS/tree/main/doc/rios_logo.svg" width="350px">
+  <br />
+  <br />
+
+  <p>
+</div>
+
+---
+
 # RIOS: Remote sensing with drone Imagery for Observation of water Surfaces
 
 **RIOS** (Remote sensing with drone Imagery for Observation of water Surfaces) is a Python-based system designed for the processing and analysis of images of water bodies acquired using unmanned aerial vehicles (UAVs). The system is aimed at small-scale remote sensing applications, providing high spatial and temporal resolution observations of aquatic environments at a relatively low operational cost.
