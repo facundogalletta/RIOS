@@ -92,5 +92,6 @@ and is intended mainly for:
 
 * non-Conda environments (not officially supported)
 
-⚠️ Warning: Installing dependencies using pip install -r requirements.txt is not recommended due to binary dependencies (GDAL, Rasterio, Shapely).
-For a reliable setup, please use the Conda environment provided.
+⚠️ Warning:
+
+Installing dependencies using pip install -r requirements.txt is not recommended due to binary dependencies (GDAL, Rasterio, Shapely). For a reliable setup, please use the Conda environment provided.
