@@ -63,7 +63,6 @@ Core functionalities include:
 RIOS-T supports applications such as thermal plume detection, identification of inflows and outflows, analysis of surface thermal heterogeneity, and monitoring of river, lake, and coastal thermal dynamics.
 
 ---
-
 ## Environment setup (recommended)
 
 This project was developed and validated using a Conda environment.
