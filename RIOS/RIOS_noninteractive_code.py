@@ -1,18 +1,18 @@
 """
-##################                #########                ############                 ######################
-##---------------###              ##-----##             ####---------####             ###----------------###
-##----########----###             ##-----##           ###----########----###         ###---------------###  
-##----##     ###----###           ##-----##          ###----###    ###----###        ###------##########
-##----#       ###----###          ##-----##         ###----###      ###----###       ###-----####
-##----##     ###----###           ##-----##        ###----###        ###----###        ###-----####
-##----#########----###            ##-----##        ###----###        ###----###          ###-----####      
-##---------------###              ##-----##        ###----###        ###----###            ###-----####  
-##----######----###               ##-----##        ###----###        ###----###              ###-----####
-##----##   ###----###             ##-----##         ###----###      ###----###                  ##-----###
-##----##     ###----###           ##-----##          ###----###    ###----###           ###########-----###
-##----##       ###----###         ##-----##           ###----########----###          ###---------------###
-##----##         ###----###       ##-----##             ####----------####          ###----------------###
-########           ###%%%%###     #########                ############           ######################
+##################                #########              ############                 ######################
+##---------------###              ##-----##           ####----------####            ###----------------###
+##----########----###             ##-----##         ###----########----###         ###---------------###  
+##----##     ###----###           ##-----##        ###----###    ###----###        ###------##########
+##----#       ###----###          ##-----##       ###----###      ###----###       ###-----####
+##----##     ###----###           ##-----##      ###----###        ###----###        ###-----####
+##----#########----###            ##-----##      ###----###        ###----###          ###-----####      
+##---------------###              ##-----##      ###----###        ###----###            ###-----####  
+##----######----###               ##-----##      ###----###        ###----###              ###-----####
+##----##   ###----###             ##-----##       ###----###      ###----###                  ##-----###
+##----##     ###----###           ##-----##        ###----###    ###----###           ###########-----###
+##----##       ###----###         ##-----##         ###----########----###          ###---------------###
+##----##         ###----###       ##-----##           ####----------####          ###----------------###
+########           ###%%%%###     #########              ############           ######################
                                                 
 Remote sensing with drone Imagery for Observation of water Surfaces
 
@@ -100,17 +100,10 @@ Se debe acceder la información de:
 ##------------------##
 ######################
 
-SourcePath='D:/GeoMapperDron/PruebaTermica/1/'
-csv_file = 'D:/GeoMapperDron/PruebaTermica/1/flight_record_FLY219.csv'
+SourcePath='../examples/DataFly_PuntadelTigre_20211216/'
+csv_file = '../examples/DataFly_PuntadelTigre_20211216/csv/flight_record_FLY219.csv'
 
-SkyNames = ['D:/GeoMapperDron/PruebaPuntadelTigre/20210520/Altum/Cielo/IMG_0037_1.tif',
-            'D:/GeoMapperDron/PruebaPuntadelTigre/20210520/Altum/Cielo/IMG_0037_2.tif',
-            'D:/GeoMapperDron/PruebaPuntadelTigre/20210520/Altum/Cielo/IMG_0037_3.tif',
-            'D:/GeoMapperDron/PruebaPuntadelTigre/20210520/Altum/Cielo/IMG_0037_4.tif',
-            'D:/GeoMapperDron/PruebaPuntadelTigre/20210520/Altum/Cielo/IMG_0037_5.tif',
-            'D:/GeoMapperDron/PruebaPuntadelTigre/20210520/Altum/Cielo/IMG_0037_6.tif'
-            ]
-
+SkyNames = None
 PanelNames = None
 
 #####################################################
@@ -120,7 +113,7 @@ PanelNames = None
 #####################################################
 
 type_process = '2'       # ['1 - RIOS-G','2 - RIOS-T', 3 - RIOS-R']
-cam          = '2'       # ['1 - Micasense Altum (multiespectral)','2 - Micasense Altum (infrarrojo térmico)','3 - Zenmuse X5S','4 - DJI Mavic Pro','5 - DJI Mini 2','6 - set manual']
+cam          = '2'       # ['1 - Micasense Altum (multiespectral)','2 - Micasense Altum (thermal-infrared)','3 - Zenmuse X5S','4 - DJI Mavic Pro','5 - DJI Mini 2','6 - set manual']
 band         = 6         # ['1 - Blue','2 - Green','3 - Red','4 - RedEdge','5 - NIR'] - In RIOS-T is 6 and in RIOS-G is 0                       
 save         = '2'       # Save rectified (no georeferenced) images ['1 - Yes','2 - No']
 [ini,fin]    = [55,225]
@@ -372,7 +365,7 @@ for k in range(range_im[0],range_im[1]+1):
         name_0=os.path.join(SourcePath, prefijo(k-1,prefix)+str(k-1)+"_"+str(band)+".tif")
         sz_window=(30,30)
         I_np2, im_res, coef_corr = drift_correction(intersection_values,correction_drift_method,coef_corr,k,range_im,temp_i,img,imRec,name_0,name,img_type,cam,
-                                                sz_window,PanelNames,SkyNames,band,FOVwidth,FOVheight,csv_file,DT_vignetting,correction_vignetting)
+                                                    sz_window,PanelNames,SkyNames,band,FOVwidth,FOVheight,csv_file,DT_vignetting,correction_vignetting)
     else:
         
         I_np2=np.array(img)
