@@ -76,4 +76,4 @@ conda activate rios
 ## Python dependencies
 
 A complete list of Python dependencies is also provided in:
-- **[Requirements](requirements.txt)**
+- requirements.txt
