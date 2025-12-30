@@ -64,4 +64,11 @@ RIOS-T supports applications such as thermal plume detection, identification of 
 
 ---
 
+## Environment setup (recommended)
 
+This project was developed and validated using a Conda environment.
+Due to GDAL, Rasterio and Shapely dependencies, Conda is strongly recommended.
+
+```bash
+conda env create -f environment.lock.yml
+conda activate rios
