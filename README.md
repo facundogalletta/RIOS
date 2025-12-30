@@ -74,7 +74,7 @@ conda env create -f environment.lock.yml
 conda activate rios
 ```
 
-# Python dependencies
+### Python dependencies
 
 A complete list of Python dependencies is also provided in [requirements](requirements.txt). 
 
