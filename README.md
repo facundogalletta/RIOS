@@ -77,7 +77,8 @@ conda activate rios
 ## Python dependencies
 
 A complete list of Python dependencies is also provided in *[`requirements.txt`](./requirements.txt)*
+
 his file was automatically generated from the source code in:
-* [Folder with the principal code](./RIOS)
-* [Core folder](./core)
+* *./RIOS*
+* *./core*
 
