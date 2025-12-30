@@ -72,7 +72,12 @@ Due to GDAL, Rasterio and Shapely dependencies, Conda is strongly recommended.
 ```bash
 conda env create -f environment.lock.yml
 conda activate rios
+```
 
 ## Python dependencies
 
-A complete list of Python dependencies is also provided in ** requirements.txt**
+A complete list of Python dependencies is also provided in:
+- *[`requirements.txt`](./requirements.txt)*
+
+
+
