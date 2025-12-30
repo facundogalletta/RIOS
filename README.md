@@ -75,22 +75,16 @@ conda activate rios
 ```
 ### Python dependencies
 
-A complete list of Python dependencies is also provided in [requirements](requirements.txt). 
+A complete list of Python dependencies is also provided in [requirements](requirements.txt).
 
 This file was automatically generated from the source code located in:
-
 * `./RIOS`
-
 * `./core`
-
+  
 and is intended mainly for:
-
 * documentation purposes
-
 * inspection of the libraries used by the project
-
 * non-Conda environments (not officially supported)
-
+  
 ⚠️ Warning:
-
 Installing dependencies using pip install -r requirements.txt is not recommended due to binary dependencies (GDAL, Rasterio, Shapely). For a reliable setup, please use the Conda environment provided.
